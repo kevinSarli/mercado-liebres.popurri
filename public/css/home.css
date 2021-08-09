@@ -1,0 +1,114 @@
+
+  main {
+    background: #ebebeb;
+}
+
+  main div.banner {
+    display: none;
+}
+  main div.banner img{
+    width: 100%;
+}
+
+  main section.product {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  main section.product h2 {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+}
+  main section.product article.model {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: white;
+}
+  main section.product article.model img {
+    width: 100%
+}
+
+  main section.product article.model div.camydet {
+    border-top: solid 1px #ebebeb;
+    display: flex;
+    flex-direction: column;
+}
+
+  main section.product article.model div.camydet div.camion {
+    height: 0;
+}
+  main section.product article.model div.camydet div.camion i {
+    display: block;
+    font-size: 1rem;
+    padding: 5px;
+    width: 21px;
+    height: 18px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 90%;
+    top: -15px;
+    color: #39b54a;;
+}
+
+  main section.product article div.detail-product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+  main section.product article div.detail-product div.precio {
+    width: 30%;
+}
+  main section.product article div.detail-product div.precio p {
+    font-size: 16px;
+    color: black;
+}
+  main section.product article div.detail-product div.descuento {
+    width: 70%;
+}
+  main section.product article div.detail-product div.descuento p{
+    color: #39b54a;;
+    font-size: 16px;
+    padding-left: 10px; 
+}
+  main section.product article.model div.camydet div.detail-product p{
+    font-size: 16px;
+}
+
+/* tablet */
+@media (min-width: 768px) {
+    
+      main div.banner {
+        display: block;
+    }
+   
+      main section.product article.model {
+        width: 40%;
+        margin: 10px 10px;
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+      main section.product article div.detail-product div.precio,
+      main section.product article div.detail-product div.descuento {
+        width: 50%;
+    }
+    
+      main section.product article.model div.camydet div.camion i {
+        left: 86%;
+    }
+}
+
+/* laptop */
+@media (min-width: 1024px){
+    
+      main section.product article.model {
+        width: 19.5%;
+    }
+    
+      main section.product article.model div.camydet div.camion i {
+        left: 83%;
+    }
+}

@@ -1,0 +1,89 @@
+.register{
+    background-color: #ebebeb;
+}
+.register main {
+    background-color: white;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 45px;
+}
+.register h2 {
+    text-align: center;
+    font-size: 16px
+    }
+.register form {
+    margin: 0 auto;
+    padding: 40px 0 20px;
+}
+.register form label {
+    font-size: 16px;
+}
+.register form .input-form {
+    display: flex;
+    flex-direction: column;
+    margin: 7px 0;
+}
+.register form .input-form input,
+.register form .input-form select {
+    margin: 10px 0;
+    height: 1.5rem;
+}
+.register form .input-form small {
+    color: red;
+    margin: 10px 0;
+    display: inline-block;
+    padding: 0px 11px;
+}
+.register form .options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    flex-direction: column;
+}
+.register form .options div {
+    width: 44%;
+    display: flex;
+    align-items: center;
+}
+.register form .options div label {
+    padding-left: 7px;
+}
+.register form .button-form {
+    display: flex;
+    justify-content: space-around;
+}
+.register form .options div.vida-sana {
+    margin-left: 7px;
+
+}
+.register form .button-form button {
+    padding: 10px 15px;
+    background-color:#1259c3;
+    border: 1px #ebebeb solid;
+    color: white;
+}
+
+.register form .button-form button:hover {
+    background-color: rgba(0, 0, 0, 0.767)
+}
+
+@media (min-width: 320px) {
+    .register main {
+        width: 70%;
+        max-width: 350px;
+    }
+    .register form .options div {
+        width: 100px;
+    }
+    .register form .button-form button:active {
+        background-color: rgba(0, 0, 0, 0.767)
+    }
+}
+
+@media (min-width: 768px) {
+    .register main {
+        width: 350px;
+    }
+}
